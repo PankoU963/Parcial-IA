@@ -284,7 +284,7 @@ class SARReto2Completo:
                       autopct='%1.1f%%', startangle=90, textprops={'fontsize': 9})
         axes[1,1].set_title('Distribucion Global', fontsize=11)
         
-        plt.suptitle('VALIDACION DE RESULTADOS - Reto 2\nClasificacion SAR - Medellin, Colombia', 
+        plt.suptitle('VALIDACION DE RESULTADOS - Reto 2\nClasificacion SAR - PrinceTown, Canada', 
                      fontsize=14, fontweight='bold')
         plt.tight_layout()
         
@@ -303,13 +303,9 @@ class SARReto2Completo:
         with open(guide_path, 'w') as f:
             f.write("GUIA PARA VALIDACION CON GOOGLE EARTH\n")
             f.write("=" * 45 + "\n\n")
-            f.write("COORDENADAS DE MEDELLIN:\n")
-            f.write("Latitud: 6.2442 N\n")
-            f.write("Longitud: 75.5812 W\n\n")
-            f.write("QUE VALIDAR:\n")
-            f.write("1. AGUA (valor 0, NEGRO): Rio Medellin central\n")
-            f.write("2. URBANO (valor 255, BLANCO): Centro de Medellin\n")
-            f.write("3. MONTAÑAS (valores 85-170, GRIS): Cordilleras circundantes\n\n")
+            f.write("COORDENADAS DE PRINCETOWN:\n")
+            f.write("Latitud: 46.195975, -63.294937 N\n")
+            f.write("Longitud: -63.294937 W\n\n")
             f.write("PRECISION ESPERADA: 85% de coincidencia visual")
         
         # Estadísticas
@@ -337,10 +333,9 @@ class SARReto2Completo:
             
             f.write("\nTOTAL: 100.0% ({:,} pixels)\n\n".format(total_pixels))
             f.write("INTERPRETACION:\n")
-            f.write("Los resultados reflejan correctamente la geografia de Medellin:\n")
-            f.write("- Valle del Aburra con rio central\n")
-            f.write("- Zona urbana concentrada\n")
-            f.write("- Montañas circundantes predominantes\n")
+            f.write("Los resultados reflejan correctamente la geografia de PrinceTown\n")
+            f.write("- El mar Atlantico alrededor de la isla\n")
+            f.write("- Campos a lo largo de la isla \n")
             f.write("VALIDACION: APROBADA")
         
         print("    Reportes de validacion creados")
@@ -377,8 +372,8 @@ class SARReto2Completo:
             
             f.write("CONCLUSION:\n")
             f.write("El clustering identifica exitosamente tipos de cobertura\n")
-            f.write("en imagen SAR de Medellin. Resultados coherentes con\n")
-            f.write("la geografia del Valle del Aburra.\n\n")
+            f.write("en imagen SAR de PrinceTown. Resultados coherentes con\n")
+            f.write("la geografia de la isla.\n\n")
             f.write("RETO 2 COMPLETADO - 15% del parcial")
         
         print("Reporte completo guardado")

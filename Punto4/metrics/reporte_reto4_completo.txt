@@ -1,0 +1,13 @@
+================================================================================
+RETO 4: CREACION DEL DATASET - REPORTE COMPLETO
+================================================================================
+Region: Santa_Marta_Colombia
+Fecha: 2025-09-29 23:55:35
+
+RESUMEN:
+• Dataset SAR denoising creado exitosamente
+• 3 patches de 512x512 pixeles
+• 5 imagenes procesadas
+
+RETO 4 COMPLETADO - VALE 50% DEL PARCIAL
+================================================================================

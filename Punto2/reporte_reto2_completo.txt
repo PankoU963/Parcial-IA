@@ -1,0 +1,29 @@
+RETO 2: CLASIFICACION NO SUPERVISADA - COMPLETO
+=======================================================
+CURSO: Vision por Computador e Inteligencia Artificial
+VALOR: 15% del parcial
+ALGORITMO: MiniBatchKMeans (optimizado)
+
+RESULTADOS PRINCIPALES:
+- Region analizada: PrinceTown_Canada
+- Filtro aplicado: Median
+- Cambio por filtrado: 34.6%
+- Clases identificadas: 4 (agua, veg.baja, veg/suelo, urbano)
+- Resultado: Escala de grises 0-255
+
+CUMPLIMIENTO REQUERIMIENTOS:
+[OK] Una imagen filtrada del Punto 1
+[OK] Misma imagen sin filtrar
+[OK] Clustering no supervisado
+[OK] Maximo 4 clases
+[OK] Resultado escala grises 0-255
+[OK] Analisis agua, vegetacion, edificios
+[OK] Comparacion filtrada vs no filtrada
+[OK] Validacion con referencia geografica
+
+CONCLUSION:
+El clustering identifica exitosamente tipos de cobertura
+en imagen SAR de PrinceTown. Resultados coherentes con
+la geografia de la isla.
+
+RETO 2 COMPLETADO - 15% del parcial

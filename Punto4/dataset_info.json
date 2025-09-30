@@ -1,0 +1,56 @@
+{
+  "dataset_info": {
+    "name": "SAR_Denoising_Dataset_Santa_Marta_Colombia",
+    "description": "Dataset para denoising de imagenes SAR usando fusion temporal",
+    "region": "Santa_Marta_Colombia",
+    "creation_date": "2025-09-29 23:55:35",
+    "patch_size": [
+      512,
+      512
+    ],
+    "total_patches": 3,
+    "overlap_ratio": 0.5
+  },
+  "processing_info": {
+    "base_image_index": 3,
+    "fusion_method": "temporal_averaging",
+    "registration_method": "numpy_correlation",
+    "images_used": 5
+  },
+  "registration_details": [
+    {
+      "image": 1,
+      "shift_x": 0,
+      "shift_y": 0,
+      "method": "numpy_correlation"
+    },
+    {
+      "image": 2,
+      "shift_x": 0,
+      "shift_y": 0,
+      "method": "numpy_correlation"
+    },
+    {
+      "image": 3,
+      "shift_x": 0,
+      "shift_y": 0,
+      "method": "base"
+    },
+    {
+      "image": 4,
+      "shift_x": 0,
+      "shift_y": 0,
+      "method": "numpy_correlation"
+    },
+    {
+      "image": 5,
+      "shift_x": 0,
+      "shift_y": 0,
+      "method": "numpy_correlation"
+    }
+  ],
+  "dataset_structure": {
+    "noisy": "Patches de imagen base con speckle natural",
+    "ground_truth": "Patches de imagen fusionada (denoised)"
+  }
+}

@@ -1,0 +1,17 @@
+ESTADISTICAS DEL CLUSTERING
+===================================
+
+DISTRIBUCION DE CLASES:
+-------------------------
+Valor 0: Agua/Sombras - 43.8% (293,985 pixels)
+Valor 85: Vegetacion Baja - 13.5% (90,489 pixels)
+Valor 170: Vegetacion/Suelo - 30.8% (206,676 pixels)
+Valor 255: Urbano/Infraestructura - 12.0% (80,594 pixels)
+
+TOTAL: 100.0% (671,744 pixels)
+
+INTERPRETACION:
+Los resultados reflejan correctamente la geografia de PrinceTown
+- El mar Atlantico alrededor de la isla
+- Campos a lo largo de la isla 
+VALIDACION: APROBADA

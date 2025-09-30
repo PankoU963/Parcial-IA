@@ -1,0 +1,8 @@
+GUIA PARA VALIDACION CON GOOGLE EARTH
+=============================================
+
+COORDENADAS DE PRINCETOWN:
+Latitud: 46.195975, -63.294937 N
+Longitud: -63.294937 W
+
+PRECISION ESPERADA: 85% de coincidencia visual
