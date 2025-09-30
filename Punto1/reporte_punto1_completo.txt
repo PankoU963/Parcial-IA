@@ -1,0 +1,47 @@
+RETO 1: IMAGENES Y FILTRADO - TELEDETECCION SAR
+==================================================
+
+DATASET PROCESADO:
+- Satelite: Sentinel-1 SAR
+- Region: PrinceTown_Canada (6.24°N, 75.58°W)
+- Polarizacion: VV (optima para urbano/agua)
+- Imagenes procesadas: 5
+- Fechas: 20250615, 20250709, 20250802, 20250814, 20250826
+
+PROCESAMIENTO APLICADO:
+1. Extraccion desde .SAFE a raw_tiffs/
+2. Re-escalado dimensional (max 1024px)
+3. Re-escalado de intensidades P2-P98 en scaled_images/
+4. Filtrado speckle en filtered_images/
+   - Filtro Mediana: zonas homogeneas
+   - Filtro Bilateral: preservacion de bordes
+   - Filtro Gaussiano: suavizado general
+5. Analisis zoom en zoom_regions/
+6. Comparacion temporal en comparisons/
+
+RESULTADOS:
+- Speckle reducido exitosamente
+- Bordes y estructuras preservados
+- Filtro mediana: efectivo en zonas homogeneas
+- Filtro bilateral: preserva mejor detalles finos
+- Filtro gaussiano: suavizado uniforme
+- Analisis zoom revela mejoras locales
+
+ARCHIVOS GENERADOS:
+- raw_tiffs/: 5 archivos
+- scaled_images/: 5 archivos
+- filtered_images/: 5 archivos
+- zoom_regions/: 4 archivos
+- comparisons/: 1 archivos
+- reporte_punto1_completo.txt: 1 archivo
+TOTAL: 21 archivos generados
+
+CONCLUSIONES:
+1. Re-escalado dimensional mejora rendimiento computacional
+2. Re-escalado P2-P98 es esencial para visualizacion SAR
+3. Filtrado speckle mejora interpretacion significativamente
+4. Diferentes filtros tienen aplicaciones especificas
+5. Zoom en regiones revela efectividad diferencial
+6. Polarizacion VV adecuada para analisis urbano/agua
+7. Secuencia temporal permite analisis de cambios
+
